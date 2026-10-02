@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "FUT Gallery Select",
+  "version": "0.1.0",
+  "description": "Sends a FUT.GG Gallery solution and selects those players in the Ultimate Team Web App.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "FUT Gallery Select",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.fut.gg/*", "https://fut.gg/*"],
+      "js": ["lib/shared.js", "content/futgg.js"],
+      "css": ["content/panel.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.ea.com/*/ultimate-team/web-app/*",
+        "https://www.ea.com/ultimate-team/web-app/*"
+      ],
+      "js": ["lib/shared.js", "content/webapp.js"],
+      "css": ["content/panel.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

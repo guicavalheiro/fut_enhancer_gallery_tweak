@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  width: 280px;
+  padding: 14px;
+  background: #141820;
+  color: #f4f6fb;
+  font: 13px/1.4 "Segoe UI", sans-serif;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  margin: 0 0 12px;
+  padding: 0;
+  max-height: 220px;
+  overflow: auto;
+  list-style: none;
+}
+
+li {
+  padding: 4px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+button {
+  width: 100%;
+  min-height: 32px;
+  border: 0;
+  border-radius: 8px;
+  background: #f5c451;
+  color: #1b1404;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

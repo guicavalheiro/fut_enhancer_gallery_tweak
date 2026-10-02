@@ -1,0 +1,144 @@
+#fe2-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483646;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  max-height: min(70vh, 480px);
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: #141820;
+  color: #f4f6fb;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#fe2-panel * {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#fe2-panel .fe2-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 10px 0 14px;
+}
+
+#fe2-panel .fe2-body {
+  overflow: auto;
+  padding: 8px 14px 14px;
+}
+
+#fe2-panel h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+#fe2-panel button.fe2-close {
+  width: 28px;
+  min-height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #f4f6fb;
+  font-size: 20px;
+  line-height: 1;
+}
+
+#fe2-panel p {
+  margin: 0 0 10px;
+}
+
+#fe2-panel .fe2-actions {
+  display: flex;
+  gap: 8px;
+}
+
+#fe2-panel button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: #f5c451;
+  color: #1b1404;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#fe2-panel button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+#fe2-panel button.fe2-secondary {
+  background: transparent;
+  color: #f4f6fb;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#fe2-panel ul {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#fe2-panel li {
+  padding: 4px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffb4b4;
+}
+
+#fe2-panel .fe2-ok {
+  color: #8ee0b5;
+}
+
+#fe2-panel .fe2-warn {
+  color: #ffd27a;
+}
+
+#fe2-panel.fe2-embedded {
+  position: static;
+  right: auto;
+  bottom: auto;
+  z-index: auto;
+  width: 100%;
+  max-height: 220px;
+  margin: 4px 0 0;
+  box-shadow: none;
+}
+
+#fe2-panel.fe2-embedded .fe2-header {
+  padding: 10px 12px;
+}
+
+#fe2-panel.fe2-embedded p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+#fe2-panel.fe2-embedded ul {
+  margin: 0;
+  max-height: 140px;
+  overflow: auto;
+  padding: 0 12px 10px;
+}
+
+#fe2-panel.fe2-embedded ul:empty {
+  display: none;
+}
